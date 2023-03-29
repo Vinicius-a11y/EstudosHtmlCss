@@ -1,3 +1,24 @@
-.form-field::placeholder {
-    color: blue;
+/*
+ID        Classes, atributos e pseudo-classes       Elementos e pseudo-elementos 
+1           0                                        0
+0           1                                        0
+1           1                                        0
+
+Especificidade
+style
+!important
+
+*/
+
+body#b p#p.p {
+    background: blue;
 }
+
+#p {
+    background: red;
+}
+
+#p.p{
+    background: yellow;
+}
+
