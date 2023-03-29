@@ -1,24 +1,10 @@
-/*
-ID        Classes, atributos e pseudo-classes       Elementos e pseudo-elementos 
-1           0                                        0
-0           1                                        0
-1           1                                        0
-
-Especificidade
-style
-!important
-
-*/
-
-body#b p#p.p {
-    background: blue;
+#texto {
+    font-family: sans-serif;
+    color: red;
+    font-size: 70px;
 }
 
-#p {
-    background: red;
+p {
+    font-size: inherit;
+    color: initial;
 }
-
-#p.p{
-    background: yellow;
-}
-
