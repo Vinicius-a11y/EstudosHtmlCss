@@ -1,17 +1,15 @@
-/* Pseudo-classe :not()*/
-
-.pai .lista li:first-child {
-    background-color: red;  
+ul li:nth-child(odd) {
+    background-color: rebeccapurple;
 }
 
-p:not(.meio) {
-    color: blue;
+ul li:nth-child(even) {
+    background-color: darkcyan;
 }
 
-input:checked + p {
-    background: red;
+ul li:nth-child(3n) {
+    background-color: yellow;
 }
 
-input:not(:checked) + p {
-    background: yellow;
+ul li:nth-child(3n+5) {
+    background-color:  red;
 }
