@@ -1,15 +1,7 @@
-ul li:nth-child(odd) {
-    background-color: rebeccapurple;
+ul li::after {
+    content: ' - ';
+    background-color: aqua;
+    color: white;
+    display: block;
 }
 
-ul li:nth-child(even) {
-    background-color: darkcyan;
-}
-
-ul li:nth-child(3n) {
-    background-color: yellow;
-}
-
-ul li:nth-child(3n+5) {
-    background-color:  red;
-}
