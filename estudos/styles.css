@@ -1,7 +1,19 @@
-ul li::after {
-    content: ' - ';
-    background-color: aqua;
-    color: white;
-    display: block;
+P {
+    font-size: 24px;
 }
 
+p::first-letter {
+    font-size: 150px;
+    display: block;
+    float: left;
+    margin: 0 10px 10px 0;
+}
+
+p::first-line {
+    background: red;
+}
+
+p::selection {
+    background: black;
+    color: white;
+}
