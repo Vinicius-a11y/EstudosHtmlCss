@@ -1,37 +1,14 @@
-.html {
-    font-size: 62.5%;
-    scroll-behavior: smooth;
-}
-
-* {
-    margin: 0;
-    padding: 0;
-}
-
-.pai {
-    width: 50rem;
-    height: 100vh;
-    background: yellow;
-    overflow: hidden;
-}
-
-.pai > div {
-    width: 50%;
-    height: 50rem;
-    background: blue;
-   
-}
-
 p {
-    font-size: 2vmax;
-}                                                    /* p {
-                                                          font-size: 1.6rem;    em e rem é mutiplicção */
-
-
-.color-one {
-    background: turquoise;
-}
-
-.color-two {
-    background: purple;
+     font-size: 20px;
+     /*font-style: italic;
+     font-weight: bold;
+     direction: ltr;
+     letter-spacing: 1px;
+     word-spacing: 5%;
+     line-height: 25px;*/
+     text-align: left;
+     /*text-decoration: underline;*/
+    /* text-indent: 50px;*/
+    text-shadow: 2px 2px 5px blue;
+    text-transform: capitalize;
 }
