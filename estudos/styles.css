@@ -13,7 +13,10 @@ body {
     max-width: 1200px;
     display: grid;
     margin: 0 auto;
-    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    grid-template-columns: [um] 1fr
+             [dois] 1fr
+             [tres] 1fr
+             [quatro];
     gap: 30px;
 }
 
@@ -25,13 +28,5 @@ body {
 
 .grid div:nth-child(5) {
     background: darkred;
-    grid-row: span 1;
-    grid-column: span 2;
-}
-
-@midia (max-width: 768px) {
-    .grid div:nth-child(5) {
-
-        grid-column: span 2;
-    }
+    grid-area: um / um / quatro / quatro ;
 }
