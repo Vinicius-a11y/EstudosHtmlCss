@@ -5,33 +5,33 @@
 }
 
 body {
-    font-size: 24px;
+   font-size: 40px;
+   font: sans-serif;
 }
 
-p {
-    margin: 0 0 24px;
+.grid {
+    max-width: 1200px;
+    display: grid;
+    margin: 0 auto;
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    gap: 30px;
 }
 
-.two-columns {
-    display: flex;
+.grid div {
+    background: tomato;
+    min-height: 100px;
+
 }
 
-.two-columns .col {
-    display: flex;
-    flex-direction: column;
-    background: lawngreen;
-    margin: 15px;
-    padding: 30px;
+.grid div:nth-child(5) {
+    background: darkred;
+    grid-row: span 1;
+    grid-column: span 2;
 }
 
-.gallery {
-    flex-flow: row wrap;
-    display: flex;
-}
+@midia (max-width: 768px) {
+    .grid div:nth-child(5) {
 
-.gallery .img {
-    flex: 1 0 20%;
-    height: 50px;
-    background: blue;
-    margin: 10px;
+        grid-column: span 2;
+    }
 }
